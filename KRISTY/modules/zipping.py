@@ -1,18 +1,14 @@
 import os
 import time
 import zipfile
-
 from telethon import types
 from telethon.tl import functions
-
 from KRISTY import TEMP_DOWNLOAD_DIRECTORY
 from KRISTY import telethn as client
 from KRISTY.events import register
 
-
 async def is_register_admin(chat, user):
     if isinstance(chat, (types.InputPeerChannel, types.InputChannel)):
-
         return isinstance(
             (
                 await client(functions.channels.GetParticipantRequest(chat, user))
@@ -20,7 +16,6 @@ async def is_register_admin(chat, user):
             (types.ChannelParticipantAdmin, types.ChannelParticipantCreator),
         )
     if isinstance(chat, types.InputPeerChat):
-
         ui = await client.get_peer_id(user)
         ps = (
             await client(functions.messages.GetFullChatRequest(chat.chat_id))
@@ -36,7 +31,6 @@ async def is_register_admin(chat, user):
 async def _(event):
     if event.fwd_from:
         return
-
     if not event.is_reply:
         await event.reply("ʀᴇᴘʟʏ ᴛᴏ ᴀ ꜰɪʟᴇ ᴛᴏ ᴄᴏᴍᴘʀᴇꜱꜱ ɪᴛ ʙᴀʙʏ🥀.")
         return
@@ -70,31 +64,21 @@ async def _(event):
         allow_cache=False,
         reply_to=event.message.id,
     )
-
-
 def zipdir(path, ziph):
-    # ziph is zipfile handle
     for root, dirs, files in os.walk(path):
         for file in files:
             ziph.write(os.path.join(root, file))
             os.remove(os.path.join(root, file))
-
-
 from datetime import datetime
-
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
 from telethon.tl.types import DocumentAttributeVideo
-
 extracted = TEMP_DOWNLOAD_DIRECTORY + "extracted/"
 thumb_image_path = TEMP_DOWNLOAD_DIRECTORY + "/thumb_image.jpg"
 if not os.path.isdir(extracted):
     os.makedirs(extracted)
-
-
 async def is_register_admin(chat, user):
     if isinstance(chat, (types.InputPeerChannel, types.InputChannel)):
-
         return isinstance(
             (
                 await client(functions.channels.GetParticipantRequest(chat, user))
@@ -102,7 +86,6 @@ async def is_register_admin(chat, user):
             (types.ChannelParticipantAdmin, types.ChannelParticipantCreator),
         )
     if isinstance(chat, types.InputPeerChat):
-
         ui = await client.get_peer_id(user)
         ps = (
             await client(functions.messages.GetFullChatRequest(chat.chat_id))
@@ -112,7 +95,6 @@ async def is_register_admin(chat, user):
             (types.ChatParticipantAdmin, types.ChatParticipantCreator),
         )
     return None
-
 
 @register(pattern="^/unzip")
 async def _(event):
@@ -128,7 +110,6 @@ async def _(event):
                 "ʜᴇʏ, ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀᴅᴍɪɴ. ʏᴏᴜ ᴄᴀɴ'ᴛ ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ, ʙᴜᴛ ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ɪɴ ᴍʏ ᴘᴍ ʙᴀʙʏ🥀"
             )
             return
-
     mone = await event.reply("ᴘʀᴏᴄᴇꜱꜱɪɴɢ ʙᴀʙʏ🥀...")
     if not os.path.isdir(TEMP_DOWNLOAD_DIRECTORY):
         os.makedirs(TEMP_DOWNLOAD_DIRECTORY)
@@ -197,8 +178,6 @@ async def _(event):
                     continue
                 os.remove(single_file)
         os.remove(downloaded_file_name)
-
-
 def get_lst_of_files(input_directory, output_lst):
     filesinfolder = os.listdir(input_directory)
     for file_name in filesinfolder:

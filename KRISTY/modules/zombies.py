@@ -1,13 +1,9 @@
 from asyncio import sleep
-
 from telethon import events
 from telethon.errors import ChatAdminRequiredError, UserAdminInvalidError
 from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import ChannelParticipantsAdmins, ChatBannedRights
-
 from KRISTY import DEMONS, DEV_USERS, DRAGONS, OWNER_ID, telethn
-
-# =================== CONSTANT ===================
 
 BANNED_RIGHTS = ChatBannedRights(
     until_date=None,
@@ -20,8 +16,6 @@ BANNED_RIGHTS = ChatBannedRights(
     send_inline=True,
     embed_links=True,
 )
-
-
 UNBAN_RIGHTS = ChatBannedRights(
     until_date=None,
     send_messages=None,
@@ -34,10 +28,6 @@ UNBAN_RIGHTS = ChatBannedRights(
 )
 
 OFFICERS = [OWNER_ID] + DEV_USERS + DRAGONS + DEMONS
-
-# Check if user has admin rights
-
-
 async def is_administrator(user_id: int, message):
     admin = False
     async for user in telethn.iter_participants(
@@ -47,9 +37,7 @@ async def is_administrator(user_id: int, message):
             admin = True
             break
     return admin
-
-
-@telethn.on(events.NewMessage(pattern="^[!/]zombies ?(.*)"))
+@telethn.on(events.NewMessage(pattern="^[./]zombies ?(.*)"))
 async def rm_deletedacc(show):
     con = show.pattern_match.group(1).lower()
     del_u = 0
@@ -95,8 +83,6 @@ async def rm_deletedacc(show):
             f"\n`{del_a}` **ᴀᴅᴍɪɴ ᴢᴏᴍʙɪᴇꜱ ɴᴏᴛ ᴅᴇʟᴇᴛᴇᴅ ʙᴀʙʏ🥀.**"
         )
     await memek.edit(del_status)
-
-
 __help__ = """
  » `/zombies` :  ꜱᴛᴀʀᴛꜱ ꜱᴇᴀʀᴄʜɪɴɢ ꜰᴏʀ ᴅᴇʟᴇᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛꜱ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ.
  » `/zombies clean` :  ʀᴇᴍᴏᴠᴇꜱ ᴛʜᴇ ᴅᴇʟᴇᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛꜱ ꜰʀᴏᴍ ᴛʜᴇ ɢʀᴏᴜᴘ.

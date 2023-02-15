@@ -353,7 +353,7 @@ def info(update: Update, context: CallbackContext):
                 [
                     [
                             InlineKeyboardButton(
-                                "ʜᴇᴀʟᴛʜ", url="https://t.me/Kristy_Mf/6"),
+                                "ʜᴇᴀʟᴛʜ", url="https://telegra.ph/ᴀʟᴏɴᴇ-02-15"),
                             InlineKeyboardButton(
                                 "ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}")
                     ],
@@ -371,7 +371,7 @@ def info(update: Update, context: CallbackContext):
                     [
 [
                             InlineKeyboardButton(
-                                "ʜᴇᴀʟᴛʜ", url="https://t.me/Kristy_Mf/6"),
+                                "ʜᴇᴀʟᴛʜ", url="https://telegra.ph/ᴀʟᴏɴᴇ-02-15"),
                             InlineKeyboardButton(
                                 "ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}")
                     ],
@@ -562,7 +562,7 @@ __help__ = """
 » `/info`*:* ɢᴇᴛ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴀ ᴜꜱᴇʀ. 
 
  *ᴡʜᴀᴛ ɪꜱ ᴛʜᴀᴛ ʜᴇᴀʟᴛʜ ᴛʜɪɴɢʏ?*
-  ᴄᴏᴍᴇ ᴀɴᴅ ꜱᴇᴇ [ʜᴘ ꜱʏꜱᴛᴇᴍ ᴇxᴘʟᴀɪɴᴇᴅ](https://t.me/Kristy_Mf/6)
+  ᴄᴏᴍᴇ ᴀɴᴅ ꜱᴇᴇ [ʜᴘ ꜱʏꜱᴛᴇᴍ ᴇxᴘʟᴀɪɴᴇᴅ](https://telegra.ph/ᴀʟᴏɴᴇ-02-15)
 
 
 """

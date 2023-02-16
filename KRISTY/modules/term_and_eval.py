@@ -125,6 +125,6 @@ async def terminal(client, message):
             )
             os.remove("tg_bot/output.txt")
             return
-        await message.reply(f"**ᴏᴜᴛᴘᴜᴛ:**\n`{output}`", parse_mode="markdown")
+        await message.reply(f"**ᴏᴜᴛᴘᴜᴛ:**\n`{output}`")
     else:
         await message.reply("**ᴏᴜᴛᴘᴜᴛ:**\n`ɴᴏ ᴏᴜᴛᴘᴜᴛ` ʙᴀʙʏ🥀")

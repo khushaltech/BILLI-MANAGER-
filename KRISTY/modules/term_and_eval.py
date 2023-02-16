@@ -69,7 +69,7 @@ async def evaluate(client, message):
 @pbot.on_message(filters.user(OWNER_ID) & filters.command("term"))
 async def terminal(client, message):
     if len(message.text.split()) == 1:
-        await message.reply("Usage: `/term ᴇᴄʜᴏ ᴏᴡᴏ ʙᴀʙʏ🥀`")
+        await message.reply("Usage: `/term echo ᴜᴡᴜ` ʙᴀʙʏ🥀")
         return
     args = message.text.split(None, 1)
     teks = args[1]

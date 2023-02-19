@@ -278,7 +278,7 @@ def save(update: Update, context: CallbackContext):
     )
 
     msg.reply_text(
-        f"ʏᴇꜱ! ᴀᴅᴅᴇᴅ `{note_name}`.\nɢᴇᴛ ɪᴛ ᴡɪᴛʜ /get `{note_name}`, ᴏʀ `#{note_name}` ʙᴀʙʏ🥀",
+        f"ʏᴇꜱ! ᴀᴅᴅᴇᴅ `{note_name}`.\nɢᴇᴛ ɪᴛ ᴡɪᴛʜ `/get {note_name}`, ᴏʀ `#{note_name}` ʙᴀʙʏ🥀",
         parse_mode=ParseMode.MARKDOWN,
     )
 

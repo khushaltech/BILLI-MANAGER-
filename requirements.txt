@@ -56,7 +56,7 @@ wget
 wikipedia
 youtube_search_python
 youtube_search
-yt_dlp
+git+https://github.com/ytdl-patched/yt-dlp.git
 youtube-dl
 youtube_search
 git+https://github.com/python-telegram-bot/ptbcontrib.git

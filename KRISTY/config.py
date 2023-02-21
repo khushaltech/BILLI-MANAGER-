@@ -67,7 +67,7 @@ class Config(object):
     PORT = 5000
     DEL_CMDS = True  # Delete commands that users dont have access to, like delete /ban if a non admin uses it.
     STRICT_GBAN = True
-    REM_BG_API_KEY = "uwu"
+    REM_BG_API_KEY = "XHPmZZztSksyF5rqc2CRBvMa"
     WORKERS = (
         8  # Number of subthreads to use. Set as number of threads your processor uses
     )

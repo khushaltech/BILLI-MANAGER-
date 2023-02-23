@@ -80,12 +80,12 @@
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to masha support than consider you made an enemy.",
          "required": true,
-         "value": "KRISTY_AF"
+         "value": "TEAMXTRON"
       },
       "UPDATES_CHANNEL": {
          "description": "Your Telegram update channel chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to masha support than consider you made an enemy.",
          "required": true,
-         "value": "KRISTY_MF"
+         "value": "TEAMX_TRON"
       },         
       "MONGO_DB_URI": {
          "description": "Required for database connections.",

@@ -789,7 +789,7 @@ def main():
 » **ꜱQʟᴀʟᴄʜᴇᴍʏ :** `1.4.31`
 ━━━━━━━━━━━━━
 
-⍟ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [𝙆𝙍𝙄𝙎𝙏𝙔](https://t.me/KRISTY_AF)
+⍟ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [𝙆𝙍𝙄𝙎𝙏𝙔](https://t.me/TEAMXTRON)
 
 """,
                 parse_mode=ParseMode.MARKDOWN,
@@ -861,7 +861,7 @@ def main():
 
 if __name__ == "__main__":
     LOGGER.info(
-        f"BOT STARTED SUCCESSFULLY IF YOU FACE ANY ISSUE THEN JOIN @KRISTY_AF : {str(ALL_MODULES)}"
+        f"BOT STARTED SUCCESSFULLY IF YOU FACE ANY ISSUE THEN JOIN @TEAMXTRON : {str(ALL_MODULES)}"
     )
     telethn.start(bot_token=TOKEN)
     pbot.start()

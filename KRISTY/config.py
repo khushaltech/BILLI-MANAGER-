@@ -19,8 +19,8 @@ class Config(object):
     OWNER_USERNAME = "I_AM_PRO_KING" # your telegram username
     ALLOW_CHATS = True # leave it as it is
     BOT_USERNAME = "MISS_KRISTY_BOT" # your bot username get it form @botfather
-    SUPPORT_CHAT = "KRISTY_AF"  # Your own group for support, do not add the @ if you dont have leave it as it is
-    UPDATES_CHANNEL = "KRISTY_MF"  # Your own chsnnel for support, do not add the @ if you dont have leave it as it is
+    SUPPORT_CHAT = "TEAMXTRON"  # Your own group for support, do not add the @ if you dont have leave it as it is
+    UPDATES_CHANNEL = "TEAMX_TRON"  # Your own chsnnel for support, do not add the @ if you dont have leave it as it is
     JOIN_LOGGER =  (
         -1001690301851
     )  # add @miss_kristy_bot in your group and type /id
@@ -49,7 +49,7 @@ class Config(object):
     INFOPIC = True
     URL = None
     SPAMWATCH_API = ""  # go to support.spamwat.ch to get key
-    SPAMWATCH_SUPPORT_CHAT = "@KRISTY_AF"
+    SPAMWATCH_SUPPORT_CHAT = "@TEAMXTRON"
 
 
     # OPTIONAL

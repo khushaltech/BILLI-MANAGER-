@@ -36,7 +36,6 @@ from KRISTY import (
     updater,
 )
 
-# needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
 from KRISTY.modules import ALL_MODULES
 from KRISTY.modules.helper_funcs.chat_status import is_user_admin

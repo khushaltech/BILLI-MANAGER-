@@ -183,8 +183,8 @@
          "required": true,
           "value": "mongodb+srv://Lisa:Lisa@lisa.r1bgylg.mongodb.net/?retryWrites=true&w=majority"
      
-          },
-      "TIME_API_KEY": {
+
+     "TIME_API_KEY": {
          "description": "Required for timezone information. Get yours from https://timezonedb.com/api",
          "required": true,
          "value": "http://api.timezonedb.com/v2.1/get-time-zone"
